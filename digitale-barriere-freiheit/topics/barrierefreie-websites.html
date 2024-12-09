@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreie Websites</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+<header>
+  <nav class="navigation" aria-label="Hauptnavigation">
+    <ul>
+      <li><a href="../index.html">Startseite</a></li>  
+      <li><a href="barrierefreiheit.html" aria-label="Mehr über Barrierefreiheit erfahren">Barrierefreiheit</a></li>
+      <li><a href="barrierefreie-websites.html" aria-label="Mehr über barrierefries Webdesign erfahren">Barrierefreie Websites </a></li>
+      <li><a href="barrierefreie-inhalte.html" aria-label="Mehr über barrierefrie Inhalte und Formulare erfahren">Inhalte und Formulare</a></li>
+      <li><a href="multimediale-inhalte.html" aria-label="Mehr über multimediale Inhalte erfahren">Multimediale Inhalte</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="keyvisual">
+    <img src="../images/barrierefreies-web.jpg" alt="Frau mit Downsyndrom sitzt vor Laptop">
+</div>
+
+
+<main>
+    <div class="einleitung-wrapper">
+        <section class="einleitung" aria-labelledby="einleitung-heading">
+          <h1> Barrierefreies Webdesign: Grundlagen und effektive Ansätze </h1>
+          <p>
+            Barrierefreie Websites sind ein wichtiger Bestandteil der modernen Welt. Sie ermöglichen es Menschen mit unterschiedlichsten Fähigkeiten auf Informationen aus dem Internet zuzugreifen. Das sorgt für Inklusion und Gleichberechtigung aller Menschen. Es ist in einigen Ländern sogar gesetzlich vorgeschrieben.
+          </p>
+        </section>
+    </div>
+
+    <div id="blog">
+        <div class="blog-inhalt">
+            <article>
+                    <h2> Farben und Kontraste </h2>
+                    <p>Auf barrierefreien Websites ist es wichtig starke Farben und Kontraste zu nutzen. So können  sie auch Menschen mit Sehproblemen gut lesen. Es ist wichtig, dass die Farben klar sind und sich gut vom Hintergrund abheben.</p>
+                    
+                    <section id="kontrast-section">
+                        <h3>Kontraste nach WCAG</h3>
+                        <p>Die WCAG ist eine Sammlung von Regeln  für leicht benutzbare Webseiten. Eine dieser Regeln besagt, dass Texte einen ausreichenden Kontrast haben müssen. Sie empfehlen einen Kontrast von mindestens 4,5:1 für normalen Text und 3:1 für größeren Text. Diese Werte sagen aus wie stark sich die Farbe des Textes vom Hintergrund abhebt. Für einen sehr guten Kontrast sollte der Text einen Kontrast von 7:1 für normalen Text und 4,5:1 für größeren Text haben.</p>
+  
+                        <h4>Drücke auf Minus: Wie lange kannst du den Text noch lesen?</h3>                
+                        <div class="kontrast-beispiel">
+                          <button id="kontrast-verringern" class="full-button" aria-label="Den Kontrast des Textes verringern">-</button>
+                          <span id="kontrast-text">Dieser Text ändert seinen Kontrast.</span>
+                          <button id="kontrast-erhoehen" class="full-button" aria-label="Den Kontrast des Textes erhöhen">+</button>
+                      </div>
+                    </section>
+
+
+                <section id="farbe-section">
+                    <h3>Wie setzt man Farben richtig ein?</h3>
+                    <p>Farben sind auch wichtig, weil sie unsere Gefühle beeinflussen können. Verschiedene Farben haben verschiedene Bedeutungen. Zum Beispiel steht Rot für Energie und Blau für Vertrauen. Aber es ist wichtig zu wissen, dass manche Menschen Farben anders sehen. Deshalb sollte man Informationen nicht nur durch Farben zeigen. Am folgenden Beispiel zeigt sich, dass allein durch Farbe keine Information barrierefrei aufnehmbar ist. Sobald die Farbe von den Balken verschwindet kann man die Balken nicht mehr zuordnen. Um für Barrierefreiheit zu sorgen muss die Information unabhängig von der Farbe aufgenommen werden können. Dieser Anspruch ist nicht umsonst auch ein WCAG-Kriterium.</p>
+                    
+                    <h4>Mit den Farben lassen sich die Balken leicht zuordnen. Aber wie ist das für Farbenblinde?</h4>
+                    <div class="farbe-beispiel">
+                        <div class="farbbalken" style="background-color: red; height: 20px; width: 100px;"></div>
+                        <div class="farbbalken" style="background-color: green; height: 20px; width: 200px;"></div>
+                        <div class="farbbalken" style="background-color: blue; height: 20px; width: 150px;"></div>
+                    </div>
+                    <div class="farbtexte">
+                        <span>Grüner Wert</span>
+                        <span>Roter Wert</span>
+                        <span>Blauer Wert</span>
+                    </div>
+                    <button id="farbenblindheit-simulation" class="full-button">Farbenblindheit simulieren</button>
+                </section>
+                    
+                <section>
+                    <h3>Werkzeuge zum Überprüfen von Farbkontrasten </h3>
+                    <p>Es gibt spezielle Werkzeuge für das Überprüfen der Farbkontraste auf Webseiten. Diese Werkzeuge sind nützlich um sicherzustellen, dass eine Webseite für alle gut lesbar ist. Beim Gestalten einer Webseite sollte man immer an die Kontraste denken: Bei Texten, Logos, Buttons und anderen wichtigen Elementen.</p>
+                </section>
+            </article>
+
+            <article>
+                <h2>Semantisches HTML: Das Gerüst jeder Website</h2>
+                <p>HTML ist wie das Gerüst einer Webseite. Es sagt dem Computer, wo Texte, Bilder und andere Sachen auf der Seite sein sollen. Semantisches HTML ist eine besondere Art von HTML. Man benennt jeden Teil des Gerüsts, damit man genau weiß was es ist. Zum Beispiel sagt semantisches HTML dem Computer, dass ein bestimmter Teil der Seite die Überschrift ist oder dass ein anderer Teil das Hauptmenü ist. Das hilft vor allem Menschen, die spezielle Programme zum Lesen der Webseite benutzen. </p>
+                <section>
+                    <h3>Beispiele für semantische HTML Elemente</h3>
+                    <ul class="blog-liste"> 
+                        <li> &lt;header&gt; und &lt;footer&gt;: Kopf- und Fußzeile der Seite.</li>
+                        <li>&lt;nav&gt;: Navigationsbereich, oft mit Menü-Links.</li>
+                        <li>&lt;main&gt;: Der Hauptinhalt der Seite.</li>
+                        <li>&lt;article&gt; und &lt;section&gt;: Teile der Seite, die für sich stehen können.</li>
+                        <li>&lt;aside&gt;: Informationen, die nicht direkt zum Hauptinhalt gehören.</li>
+                        <li>&lt;h1&gt; bis &lt;h6&gt;: Überschriften, die die Struktur der Seite zeigen.</li>
+                    </ul>
+                </section>
+            </article>
+
+            <article>
+                <h2>ARIA: Ein wichtiger Bestandteil für barrierefreiere Internetnutzung</h2>
+                <p>ARIA (“Accessible Rich Internet Applications”) ist eine Technologie um Webseiten besser nutzbar zu machen. Besonders für Menschen, die spezielle Hilfsmittel wie Screenreader benutzen. Zum Beispiel werden durch AIRA Webseiten für Menschen mit Sehbehinderungen zugänglicher. Es besteht aus speziellen Codes, die man in die Webseite einbaut. Diese Codes sagen Hilfsmitteln wie Screenreadern, was auf der Seite passiert und wie man sie benutzen kann.</p>
+
+                <section>
+                    <h3>Warum AIRA so wichtig ist</h3>
+                    <p>Stellen Sie sich vor, Sie hören eine Webseite anstatt sie zu sehen. Ohne ARIA könnte es schwer sein zu verstehen, wo auf der Seite bestimmte Informationen stehen oder was ein Button macht. ARIA sagt dem Screenreader zum Beispiel, ob ein Button etwas einschaltet oder ausschaltet, oder wo der Hauptteil der Seite beginnt und endet.</p>
+                </section>
+
+                <section>
+                    <h3>Beispiele für AIRA</h3>
+                    <ul class="blog-liste"> 
+                        <li>aria-label: Gibt einem Element einen Namen. Das ist nützlich, wenn der Text nicht klar sagt, was das Element macht. Zum Beispiel könnte ein Button nur ein Symbol haben. Mit aria-label können Sie erklären, dass der Button zum Schließen des Fensters dient.</li>
+                        <li>role: Sagt, welche Rolle ein Element auf der Seite hat. Zum Beispiel kann ein Element die Rolle eines Buttons oder einer Navigation haben.</li>
+                        <li>aria-live: Wird verwendet, um Bereiche zu kennzeichnen, die sich automatisch aktualisieren. So weiß der Screenreader, dass er diese Teile der Seite besonders beachten muss.</li>
+                    </ul>
+                </section>
+               
+
+                <section id="aira-section">
+                    <h3>Ein Beispiel für ARIA</h3>
+                    <p>In diesem Beispiel verwenden wir ARIA, um einen modalen Dialog auf einer Webseite zu erstellen. Ein modalen Dialog ist ein spezielles Fenster, das sich öffnet und die Aufmerksamkeit des Nutzers erfordert. Solange dieser Dialog offen ist, kann man nicht mit dem Rest der Webseite interagieren.</p>
+                
+                    <h4>Klicke auf den Button</h4>                
+                    <button class="full-button" onclick="toggleModal()">Dialog öffnen</button>
+                
+                    <div id="modalDialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle" style="display: none;">
+                        <h2 id="dialogTitle">Modaler Dialog</h2>
+                        <p>Dies ist ein Beispiel für einen modalen Dialog.</p>
+                        <button class="full-button" onclick="toggleModal()">Schließen</button>
+                    </div>
+                </section>
+                <p>Es ist wichtig ARIA richtig zu verwenden. Ein falscher Einsatz kann die Webseite schwerer nutzbar machen. Deshalb sollte man immer testen, wie gut die Seite mit Screenreadern funktioniert. Der Dialog wird mit einem Button geöffnet. Er enthält einen Titel und einen Schließ-Button. Dank ARIA weiß eine Person, die einen Screenreader benutzt, dass sie sich in einem Dialog befindet. Das Attribut aria-modal="true" teilt dem Screenreader mit, dass der Nutzer auf den Dialog konzentriert bleiben sollte, bis er geschlossen wird.</p>
+                
+            </article>
+            
+        </div>
+        <aside>
+            <h5>Andere Inhalte zum Thema Barrierefreiheit:</h5>
+            <div>
+                <div class="topic">
+                    <img src="../images/barrierefreie-inhalte.jpg" alt="Ältere Frau sitzt vor Laptop und macht sich Notizen" class="topic-image">
+                    <section class="topic-inhalt">
+                      <h4>Inhalte und Formulare</h4>
+                      <p>Barrierefreie Inhalte durch verständliche Sprache und zugängliche Formulare gestalten.</p>
+                      <a href="../topics/barrierefreie-inhalte.html" aria-label="Mehr über barrierefrie Inhalte und Formulare erfahren">Mehr erfahren</a>
+                    </section>
+                  </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+
+<footer>
+    <p>Kontakt: alexander.ott@tha.de</p>
+    <p>Impressum</p>
+    <small id="copyright">
+        Copyright © 2024 Alexander Ott. All Rights Reserved
+    </small>
+</footer>
+<script src="../script/script.js"></script>
+</body>
+</html>

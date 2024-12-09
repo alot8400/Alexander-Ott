@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vorlesung Barrierefreiheit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+  <nav class="navigation" aria-label="Hauptnavigation">
+      <ul>
+      <li><a href="index.html">Startseite</a></li>  
+      <li><a href="topics/barrierefreiheit.html" aria-label="Mehr über Barrierefreiheit erfahren">Barrierefreiheit</a></li>
+      <li><a href="topics/barrierefreie-websites.html" aria-label="Mehr über barrierefries Webdesign erfahren">Barrierefreie Websites </a></li>
+      <li><a href="topics/barrierefreie-inhalte.html" aria-label="Mehr über barrierefrie Inhalte und Formulare erfahren">Inhalte und Formulare</a></li>
+      <li><a href="topics/multimediale-inhalte.html" aria-label="Mehr über multimediale Inhalte erfahren">Multimediale Inhalte</a></li>
+      </ul>
+  </nav>
+</header>
+
+<div class="keyvisual">
+  <img src="images/barrierefreiheit-startseite.jpg" alt="Frau im Rollstuhl sitzt vor Laptop und bekommt etwas erklärt">
+</div>
+
+<main id="content">
+  <div class="einleitung-wrapper">
+    <section class="einleitung" aria-labelledby="einleitung-heading">
+      <h1> Barrierefreiheit für alle: Ein Weg zu inklusiven Lebensräumen </h1>
+      <p>
+        Barrierefreiheit bedeutet, dass Orte, Verkehrsmittel, technische Geräte, Computersysteme, Informationsquellen und Kommunikationsmittel so gestaltet sind, dass Menschen mit Behinderungen sie ganz normal und ohne große Schwierigkeiten nutzen können. Dabei dürfen sie Hilfsmittel verwenden, die sie wegen ihrer Behinderung brauchen. Ziel ist es, dass jeder ohne fremde Hilfe Zugang hat und alles problemlos nutzen kann. Diese Website soll ein Bewusstsein für Barrierefreiheit schaffen.
+      </p>
+    </section>
+  </div>
+
+  <div class="topics">
+      <h2>Themenübersicht</h2>
+      <div class="topic-container">
+        
+        <div class="topic topic-startseite">
+          <img src="images/barrierefreiheit.jpg" alt="Frau in elektrischem Rollstuhl fährt auf Fahrradstreifen" class="topic-image">
+          <section class="topic-inhalt">
+            <h4>Barrierefreiheit: Grundlagen, Gesetze und Anwendungen</h4>
+            <p>Die Wichtigkeit der Barrierefreiheit: Von der Bedeutung im Alltag bis hin zu gesetzlichen Regelungen und universellem Design.</p>
+            <a href="topics/barrierefreiheit.html" class="topic-link" aria-label="Mehr über Barrierefreiheit erfahren">Mehr erfahren</a>
+          </section>
+        </div>
+
+        <div class="topic topic-startseite">
+          <img src="images/barrierefreies-web.jpg" alt="Frau mit Downsyndrom sitzt vor Laptop" class="topic-image">
+          <section class="topic-inhalt">
+            <h4>Barrierefreie Websites: Grundlagen und effektive Ansätze</h4>
+            <p>Wie kann man das Internet für alle zugänglich machen? – von Farbkontrasten bis hin zu semantischem HTML.</p>
+            <a href="topics/barrierefreie-websites.html" class="topic-link" aria-label="Mehr über barrierefries Webdesign erfahren">Mehr erfahren</a>
+          </section>
+        </div>        
+
+        <div class="topic topic-startseite">
+          <img src="images/barrierefreie-inhalte.jpg" alt="Ältere Frau sitzt vor Laptop und macht sich Notizen" class="topic-image">
+          <section class="topic-inhalt">
+            <h4>Inhalte und Formulare</h4>
+            <p>Barrierefreie Inhalte durch verständliche Sprache und zugängliche Formulare gestalten.</p>
+            <a href="topics/barrierefreie-inhalte.html" aria-label="Mehr über barrierefrie Inhalte und Formulare erfahren">Mehr erfahren</a>
+          </section>
+        </div>
+
+        <div class="topic topic-startseite">
+          <img src="images/multimedia.jpg" alt="Mann schaut auf sein Handy" class="topic-image">
+          <section class="topic-inhalt">
+            <h4>Multimediale Inhalte</h4>
+            <p>Wie ermöglicht man barrierefreien Zugang zu digitalen Medieninhalten?</p>
+            <a href="topics/multimediale-inhalte.html" aria-label="Mehr über multimediale Inhalte und Formulare erfahren">Mehr erfahren</a>
+          </section>
+        </div>
+     
+      </div>
+
+  </div>
+
+  <div class="kontakt-container">
+    <h2>Jetzt Kontakt aufnehmen</h2>
+    <form action="/submit-form" method="post">
+      <fieldset>
+          <legend> Kontaktformular </legend>
+          <div class="kontakt">
+              <label for="vorname">Vorname <span class="required">(Pflichtfeld)</span></label>
+              <input type="text" id="vorname" name="vorname" aria-required="true" required>
+          </div>
+          <div class="kontakt">
+              <label for="nachname">Nachname <span class="required">(Pflichtfeld)</span></label>
+              <input type="text" id="nachname" name="nachname" aria-required="true" required>
+          </div>
+          <div class="kontakt">
+              <label for="email">E-Mail <span class="required">(Pflichtfeld)</span></label>
+              <input type="email" id="email" name="email" aria-required="true" required>
+          </div>
+          <div class="kontakt">
+              <label for="message">Nachricht <span class="required">(Pflichtfeld)</span></label>  
+              <textarea id="message" name="message" rows="6" aria-required="true" required></textarea>
+          </div>
+          <button type="submit" aria-label="Die Nachricht absenden">Nachricht senden</button>
+      </fieldset>
+  </form>
+</div>
+
+  
+</main>
+</body>
+
+<footer>
+    <p>Kontakt: alexander.ott@tha.de</p>
+    <p>Impressum</p>
+</footer>
+</body>
+</html>

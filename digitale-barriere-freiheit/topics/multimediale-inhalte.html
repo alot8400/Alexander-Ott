@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimediale Inhalte</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+
+<header>
+  <nav class="navigation" aria-label="Hauptnavigation">
+    <ul>
+      <li><a href="../index.html">Startseite</a></li>  
+      <li><a href="barrierefreiheit.html" aria-label="Mehr über Barrierefreiheit erfahren">Barrierefreiheit</a></li>
+      <li><a href="barrierefreie-websites.html" aria-label="Mehr über barrierefries Webdesign erfahren">Barrierefreie Websites </a></li>
+      <li><a href="barrierefreie-inhalte.html" aria-label="Mehr über barrierefrie Inhalte und Formulare erfahren">Inhalte und Formulare</a></li>
+      <li><a href="multimediale-inhalte.html" aria-label="Mehr über multimediale Inhalte erfahren">Multimediale Inhalte</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="keyvisual">
+    <img src="../images/multimedia.jpg" alt="Frau mit Downsyndrom sitzt vor Laptop">
+</div>
+
+
+<main>
+    <div class="einleitung-wrapper">
+        <section class="einleitung" aria-labelledby="einleitung-heading">
+          <h1>Multimediale Inhalte: Bilder und Videos für jeden</h1>
+          <p>Multimediale Inhalte sind zum Beispiel Bilder oder Videos. Es ist wichtig, dass auch Menschen mit unterschiedlichen Fähigkeiten und Bedürfnissen gleichermaßen auf diese zugreifen können. Zum Beispiel werden durch Alternativtext, Titel, Bildunterschrift und das Verwenden von Fließtext Bilder barrierefrei.</p>
+        </section>
+    </div>
+
+    <div id="blog">
+        <div class="blog-inhalt">
+            <article>
+                    <h2>Wie gestalte ich multimediale Inhalte barrierefrei?</h2>
+                    <p>Multimediale Inhalte sollten so gestaltet sein, dass sie von Screenreadern und anderen assistiven Technologien gelesen werden können. Dadurch können Menschen mit Sehbehinderungen einfacher darauf zugreifen. Zudem sollten Videos Untertitel für Hörgeschädigte bieten und Audio sollten Transkriptionen für Gehörlose oder schwerhörige Personen bereitstellen.</p>
+                    
+                    <section>
+                        <h3>Welche Arten von Grafiken gibt es?</h3>
+                        <p>Grafiken auf Websites können in verschiedene Kategorien unterteilt werden. Dazu gehören informative Bilder, Informationsgrafiken, dekorative Bilder, funktionale Bilder und Schriftgrafiken. Barrierefreie Gestaltung erfordert die Bereitstellung von Alternativtexten für informative Bilder und Informationsgrafiken. Dekorative Bilder werden oft leer markiert. Funktionale Bilder, wie Logos, benötigen eine Beschreibung ihrer Funktion im ALT-Text. Schriftgrafiken sollten den im Bild enthaltenen Text im Alternativtext wiedergeben. Bei zu langem Text kann auf einen externen Text verwiesen werden. Diese Praktiken ermöglichen eine bessere Zugänglichkeit für alle Nutzer.</p>
+                    </section>
+
+                    <section>
+                      <h3>Regeln für barrierefreie Bilder</h3>
+                      <p>Die barrierefreie Gestaltung multimedialer Inhalte trägt nicht nur zur Inklusion bei, sondern erweitert auch die Reichweite und Relevanz Ihrer Inhalte, indem sie für ein breiteres Publikum zugänglich werden. Dies ist ein wichtiger Schritt in Richtung einer inklusiven digitalen Gesellschaft. Es gibt ein paar Grundsätze, auf die man achten sollte:</p>
+                      <ul class="blog-liste">
+                        <li>Alt-Text: Auch bekannt als Alternativtext, beschreibt den Bildinhalt und kann von Screenreadern vorgelesen werden. Formatierungen sind nicht möglich und wird verwendet, wenn das Bild nicht geladen wird.</li>
+                        <li>Titel: Ein optionaler Text, der zusätzliche Informationen zum Bild bereitstellen kann. Wird angezeigt, wenn der Benutzer mit der Maus über das Bild fährt und bietet ergänzende Details, Erläuterungen oder zusätzliche Informationen.</li>
+                        <li>Bildunterschrift: Ein erklärender Text, der unterhalb oder neben einem Bild platziert wird und Kontext oder zusätzliche Informationen zum Bild bietet.</li>
+                        <li>Fließtext: Kontinuierlicher, fortlaufender Text auf einer Webseite, der Hauptinformationen, Beschreibungen oder Erklärungen enthält und Verbindungen zu Bildern herstellen kann.</li>
+                      </ul>
+                    </section>
+
+
+
+                    <section id="bild-section">
+                      <h2>Beispiele für barrierefreie Bildgestaltung im Internet</h3>
+
+
+                      <section class="bild-abschnitt" aria-label="Beispiel für ein infromatives Bild">
+                        <h3>Informative Bilder</h3>
+                        <p>Informative Bilder sind für den Inhalt des umgebenden Textes relevant. Das folgende Bild wird durch eine Alt-Beschreibung im Alt-Tag unterstützt. Somit ist das Bild für Benutzer zugänglich beispielsweise nicht oder schlecht sehen. Der Text im Alt-Tag den Screenreader vorlesen entspricht der Bildunterschrift.</p>
+                        <div id="bild-container">
+                          <img id="bild-beispiel" src="../images/bild-beispiel.jpg" alt="Ein älteres Paar sitzt auf einer Bank und hat den Blick auf die davorliegende Berglandschaft gerichtet">
+                          <img-caption>Ein älteres Paar sitzt auf einer Bank und hat den Blick auf die davorliegende Berglandschaft gerichtet. Quelle: Unsplash</img-caption>
+                        </div>
+                      </section>  
+
+                      <section class="bild-abschnitt" aria-label="Beispiel für ein dekoratives Bild">
+                        <h3>Dekorative Bilder</h3>
+                        <p>Dekorative Bilder haben keinen Bezug zum Inhalt. Sie sollten vom Screenreader ignoriert werden. Dafür sorgt ein leeres Alternativ-Text-Tag.</p>
+                        <div id="bild-container">
+                          <img id="bild-beispiel" src="../images/dekoratives-bild-beispiel.jpg" alt="">
+                        </div>
+                      </section>  
+
+                      <section class="bild-abschnitt" aria-label="Beispiel für eine Informationsgrafik">
+                        <h3>Informationsgrafiken</h3>
+                        <p>Informationsgrafiken stellen Daten dar. Die Daten müssen durch Text unterstütz werden und zum Download bereit stehen. Der Alternativ Text sollte die Kernaussage beinhalten. Im folgenden Beispiel ist der Alternativ-Text: "Balkendiagramm zeigt den Prozentanteil an Menschen in der EU die noch nie Online waren. Griechenland liegt mit 20% vorne"</p>
+                        <div id="bild-container">
+                          <img src="../images/Statistik.png" alt="Balkendiagramm zeigt den Prozentanteil an Menschen in der EU die noch nie Online waren. Griechenland liegt mit 20% vorne">
+                          <p><a href="besucherzahlen-daten.csv">Daten als Tabelle herunterladen</a></p>
+                        </div>
+                      </section>  
+
+                      <section class="bild-abschnitt" aria-label="Beispiel für funktionale Bilder">
+                        <h3>Funktionale Bilder</h3>
+                        <p>Bei funktionalen Bildern wie Logos oder Buttons ist der ALT-Text wichtig. Er soll erklären, was die Funktion des Bildes ist, nicht nur, was es zeigt. Zum Beispiel: Ein Play-Button sollte im ALT-Text "Video abspielen" haben.</p>
+                        <div id="bild-container">
+                          <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite"> <img id="logo" src="../images/wikipedia-logo.png" alt="Startseite von Wikipedia"></a>
+                        </div>
+                      </section>  
+                    </section>
+
+
+                    <section class="bild-abschnitt" aria-label="Beispiel für Schriftgrafiken">
+                      <h3>Schriftgrafiken</h3>
+                      <p>Für Schriftgrafiken, wie Speisekarten oder gescannte Briefe, sollte der Alternativ-Text (ALT-Text) den auf dem Bild enthaltenen Text wiedergeben. Der Alternativ-Text für das folgende Bild: "ein zettel auf dem steht: keine panik"</p>
+                      <div id="bild-container">
+                        <img id="bild-beispiel" src="../images/schriftbild.jpg" alt="ein zettel auf dem steht: keine panik">
+                      </div>
+                    </section>  
+
+                    <section class="bild-abschnitt" aria-label="Beispiel für Icons">
+                      <h3>Icons</h3>
+                      <p>Icons und Piktogramme können Text ersetzen und die Kommunikation unterstützen. Wichtig dabei ist eine eindeutige Gestaltung. Unnötige Details sollten vermieden werden. Flächige Icons gelten als leichter erkennbar als lineare. SVG-Dateien sind empfehlenswert, da sie skalierbar sind. Idealerweise kombiniert man Icons mit einem Label für mehr Klarheit.</p>
+                      <div id="bild-container">
+                        <a href="../index.html" aria-label="Zur Startseite">
+                          <img src="../images/home.svg" alt="Home">
+                          <p>zurück zur Startseite Icon</p>
+                      </a>
+                      
+                      </div>
+                    </section>  
+            </article>
+
+        </div>
+        <aside>
+            <h5>Andere Inhalte zum Thema Barrierefreiheit:</h5>
+            <div>
+              <div class="topic">
+                <img src="../images/barrierefreiheit.jpg" alt="Frau in elektrischem Rollstuhl fährt auf Fahrradstreifen" class="topic-image">
+                <section class="topic-inhalt">
+                  <h4>Barrierefreiheit: Grundlagen, Gesetze und Anwendungen</h4>
+                  <p>Die Wichtigkeit der Barrierefreiheit: Von der Bedeutung im Alltag bis hin zu gesetzlichen Regelungen und universellem Design.</p>
+                  <a href="../topics/barrierefreiheit.html" class="topic-link" aria-label="Mehr über Barrierefreiheit erfahren">Mehr erfahren</a>
+                </section>
+              </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+
+<footer>
+    <p>Kontakt: alexander.ott@tha.de</p>
+    <p>Impressum</p>
+    <small id="copyright">
+        Copyright © 2024 Alexander Ott. All Rights Reserved
+    </small>
+</footer>
+<script src="../script/script.js"></script>
+</body>
+</html>
